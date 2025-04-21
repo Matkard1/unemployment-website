@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unemployment Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            overflow: hidden;
+            background: url('zdjecie1.jpg') no-repeat center 8% fixed;
+            background-size: cover;
+        }
+
+        .button-container {
+            text-align: center;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        .button-container a {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .button-container a:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.2);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .button-container a {
+            animation: fadeIn 0.5s ease-out forwards;
+            opacity: 0;
+        }
+
+        .button-container a:nth-child(1) { animation-delay: 0.2s; }
+        .button-container a:nth-child(2) { animation-delay: 0.4s; }
+        .button-container a:nth-child(3) { animation-delay: 0.6s; }
+
+        .top-left-text {
+            position: fixed;
+            top: 20px;
+            left: 100px;
+            color: rgb(0, 0, 0);
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeIn 0.5s ease-out forwards;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-left-text">Made by Matkard</div>
+    <div class="button-container">
+        <a href="https://www.pracuj.pl">jumpscare</a>
+        <a href="https://pl.linkedin.com">jumpscare</a>
+        <a href="https://www.jobs.pl">jumpscare</a>
+    </div>
+</body>
+</html>
